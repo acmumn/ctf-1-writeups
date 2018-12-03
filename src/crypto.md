@@ -75,7 +75,7 @@ Finally, we have the private exponent, so the rest is just the same as RSA 1.
 
 The flag is `flag{84270519872}`.
 
-## RSA 3
+## RSA 3 (90)
 
 This challenge gives us two keys produced from the same modulus:
 
@@ -168,7 +168,7 @@ We also need to hex decode it:
 b'flag{sharing_is_...caring?}'
 ```
 
-### RSA 4
+## RSA 4 (120)
 
 In this challenge, we're not given specific keys, but the source code for a service that continuously encrypts our flag with different keys. Let's see how the service generates these keys:
 
@@ -244,7 +244,7 @@ Now we can just follow the usual method to solve the problem.
 
 Decoded, the flag is `flag{generating_primes_isn't_so_hard?}`.
 
-### RSA 5
+## RSA 5 (150)
 
 In this challenge, we're given two files: `key.pem` and `flag.enc.txt`. Judging from the first line, `key.pem` is the public key. So now we have no private key, no factors, no known keypair, no oracle. What do we do?
 
