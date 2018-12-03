@@ -14,12 +14,12 @@ Stay tuned for the next CTF in spring!
 - HeXL (40)
 - Un..zipping? XL (60)
 
-### Bin
+## Bin
 
 - Slot Machine (60)
 - EZBinExp (100)
 
-### Crypto
+## Crypto
 
 - Caesar Cipher (30)
 - RSA 1 (50)
@@ -29,7 +29,7 @@ Stay tuned for the next CTF in spring!
 - RSA 5 (150)
 - Signature Oracle (150)
 
-### Forensics
+## Forensics
 
 - "Stego" (40)
 - Fix File (45)
@@ -38,23 +38,23 @@ Stay tuned for the next CTF in spring!
 - Git the Flag (100)
 - Keyboard (140)
 
-### Misc
+## Misc
 
 - I Spy (35)
 - Loading (70)
 
-### Recon
+## Recon
 
 - List Search (20)
 
-## Trivia
+# Trivia
 
 - Trivia 1 (10)
 - Trivia 2 (20)
 - Trivia 3 (30)
 - Trivia 4 (40)
 
-### Web
+## Web
 
 - 90sweb (35)
 - SumServer (125)

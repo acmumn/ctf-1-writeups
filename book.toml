@@ -1,0 +1,5 @@
+[book]
+authors = ["Michael Zhang"]
+multilingual = false
+src = "src"
+title = "ACM CTF 1 Writeups"
