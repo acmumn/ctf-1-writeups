@@ -4,7 +4,7 @@ This is the site for the writeups for ACM CTF 1. The challenges without a link d
 
 ### Basics
 
-- Sanity Check (1)
+- [Sanity Check (1)](./basics.html#sanity-check-1)
 - Un..zipping? (5)
 - Hex (5)
 - Getting Connected (10)
