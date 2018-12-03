@@ -5,6 +5,57 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
     onload="renderMathInElement(document.body);"></script>
 
+## Caesar Cipher (30)
+
+Caesar cipher is just a shift cipher. Since there's only 26 possibilities we can even brute force it. Here's a program to brute force it:
+
+```py
+from string import ascii_lowercase
+enc = "uapv{qji_sxs_ndj_jht_etcrxa_pcs_epetg}"
+a = ord("a")
+for i in range(26):
+    m = ""
+    for c in enc:
+        if c in ascii_lowercase:
+            m += chr((ord(c) - a + i) % 26 + a)
+        else:
+            m += c
+    print(m)
+```
+
+Which gives this output:
+
+```
+uapv{qji_sxs_ndj_jht_etcrxa_pcs_epetg}
+vbqw{rkj_tyt_oek_kiu_fudsyb_qdt_fqfuh}
+wcrx{slk_uzu_pfl_ljv_gvetzc_reu_grgvi}
+xdsy{tml_vav_qgm_mkw_hwfuad_sfv_hshwj}
+yetz{unm_wbw_rhn_nlx_ixgvbe_tgw_itixk}
+zfua{von_xcx_sio_omy_jyhwcf_uhx_jujyl}
+agvb{wpo_ydy_tjp_pnz_kzixdg_viy_kvkzm}
+bhwc{xqp_zez_ukq_qoa_lajyeh_wjz_lwlan}
+cixd{yrq_afa_vlr_rpb_mbkzfi_xka_mxmbo}
+djye{zsr_bgb_wms_sqc_nclagj_ylb_nyncp}
+ekzf{ats_chc_xnt_trd_odmbhk_zmc_ozodq}
+flag{but_did_you_use_pencil_and_paper}
+gmbh{cvu_eje_zpv_vtf_qfodjm_boe_qbqfs}
+hnci{dwv_fkf_aqw_wug_rgpekn_cpf_rcrgt}
+iodj{exw_glg_brx_xvh_shqflo_dqg_sdshu}
+jpek{fyx_hmh_csy_ywi_tirgmp_erh_tetiv}
+kqfl{gzy_ini_dtz_zxj_ujshnq_fsi_ufujw}
+lrgm{haz_joj_eua_ayk_vktior_gtj_vgvkx}
+mshn{iba_kpk_fvb_bzl_wlujps_huk_whwly}
+ntio{jcb_lql_gwc_cam_xmvkqt_ivl_xixmz}
+oujp{kdc_mrm_hxd_dbn_ynwlru_jwm_yjyna}
+pvkq{led_nsn_iye_eco_zoxmsv_kxn_zkzob}
+qwlr{mfe_oto_jzf_fdp_apyntw_lyo_alapc}
+rxms{ngf_pup_kag_geq_bqzoux_mzp_bmbqd}
+synt{ohg_qvq_lbh_hfr_crapvy_naq_cncre}
+tzou{pih_rwr_mci_igs_dsbqwz_obr_dodsf}
+```
+
+There it is, our flag sitting in plain sight: `flag{but_did_you_use_pencil_and_paper}`.
+
 ## RSA 1 (50)
 
 In this challenge, we're given this information:
